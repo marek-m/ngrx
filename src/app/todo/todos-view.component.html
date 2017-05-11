@@ -1,0 +1,4 @@
+<p *ngIf="todos.pending">Spinner.</p>
+<todo-view [todo]="todo" *ngFor="let todo of todos.data">
+</todo-view>
+<p *ngIf="todos.error">{{todos.error}}</p>
